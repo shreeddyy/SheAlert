@@ -1,0 +1,3 @@
+{
+  "/api/threat-analyzer/route": "app/api/threat-analyzer/route.js"
+}

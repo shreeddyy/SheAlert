@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "name": "shree",
+      "email": "shriyanshisharma3005@gmail.com",
+      "passwordHash": "b5568af32829c2152598164f09862ef657c347d654d7c017f58799ca7774b032",
+      "createdAt": "2026-05-03T21:17:31.936Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "3cdee9a4339b904f67117730702fc24a6bc3bcdf2044457a",
+      "userId": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "createdAt": "2026-05-03T21:17:31.942Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "8be49394-8690-4013-a298-279c2456c0db",
+      "userId": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "name": "mom",
+      "phone": "Not set",
+      "relation": "Shared from location screen",
+      "createdAt": "2026-05-03T21:25:28.013Z"
+    }
+  ],
+  "sosAlerts": [
+    {
+      "id": "5b59f802-5cea-4ac7-9d5d-06a59887ce71",
+      "userId": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "message": "Emergency assistance requested from SOS screen",
+      "tapCount": 3,
+      "location": {
+        "latitude": 28.973268689086662,
+        "longitude": 77.73345261594203
+      },
+      "createdAt": "2026-05-04T06:06:08.646Z"
+    },
+    {
+      "id": "5acaaf52-afd4-4854-92b4-cf8d1692d401",
+      "userId": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "message": "Emergency assistance requested from SOS screen",
+      "tapCount": 3,
+      "location": {
+        "latitude": 28.826499641813413,
+        "longitude": 77.5720494906332
+      },
+      "createdAt": "2026-05-05T10:14:22.351Z"
+    },
+    {
+      "id": "c2af159d-32d7-450e-a91d-e9927c3f50f9",
+      "userId": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "message": "Emergency assistance requested from SOS screen",
+      "tapCount": 3,
+      "location": {
+        "latitude": 28.826499641813413,
+        "longitude": 77.5720494906332
+      },
+      "createdAt": "2026-05-05T10:14:25.722Z"
+    }
+  ],
+  "locationShares": [],
+  "threatAnalyses": [
+    {
+      "id": "45c40321-7aa0-477a-a7e1-33467a433622",
+      "prompt": "Someone is following me",
+      "threatLevel": "HIGH",
+      "observations": [
+        "The description suggests immediate personal risk.",
+        "You may need to move to a secure public place right away.",
+        "Contacting trusted people or emergency services is advisable."
+      ],
+      "recommendations": [
+        "Move toward a crowded or secure location immediately.",
+        "Trigger SOS if you feel actively threatened.",
+        "Call a trusted contact and keep them on the line.",
+        "Avoid isolated streets or enclosed spaces.",
+        "Share live location until you feel safe again."
+      ],
+      "createdAt": "2026-05-03T21:06:59.006Z"
+    },
+    {
+      "id": "5446fdee-ea96-492a-8d5a-23d3c4c5f826",
+      "userId": "3b174b87-3eac-4b52-a59d-4c8afda8f221",
+      "prompt": "I am in an unsafe location",
+      "threatLevel": "MEDIUM",
+      "observations": [
+        "The situation shows warning signs that should be taken seriously.",
+        "Staying visible and connected will lower risk.",
+        "Preparation and quick access to help matter here."
+      ],
+      "recommendations": [
+        "Stay in well-lit public areas.",
+        "Share your location with emergency contacts.",
+        "Keep your phone unlocked and accessible.",
+        "Plan the quickest route to a safe place.",
+        "Escalate to SOS if the situation worsens."
+      ],
+      "createdAt": "2026-05-05T10:12:05.480Z"
+    }
+  ],
+  "audioRecords": [],
+  "safetyPlans": [],
+  "journeys": []
+}

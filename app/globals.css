@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Cascadia Code', 'Consolas', monospace;
+
+  /* Primary Colors */
+  --color-brand: #de5b8c;
+  --color-brand-light: #f7b4cc;
+  --color-brand-dark: #bc4772;
+
+  /* Neutrals */
+  --color-dark: #382e34;
+  --color-dark-secondary: #fff1f7;
+  --color-dark-tertiary: #ffe2ec;
+  --color-light: #ffffff;
+  --color-light-secondary: #fff7fa;
+
+  /* Accents */
+  --color-alert: #ef476f;
+  --color-success: #37b48c;
+  --color-warning: #f2a93b;
+
+  /* Semantic Tokens */
+  --color-background: #fff4f8;
+  --color-background-secondary: #fde8f1;
+  --color-foreground: #342730;
+  --color-border: #f1d7e0;
+  --color-muted: #8f7783;
+
+  --radius: 0.8rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at top left, rgba(222, 91, 140, 0.22), transparent 22%),
+      radial-gradient(circle at top center, rgba(247, 180, 204, 0.54), transparent 34%),
+      radial-gradient(circle at top right, rgba(157, 222, 255, 0.24), transparent 20%),
+      radial-gradient(circle at bottom right, rgba(255, 210, 128, 0.18), transparent 20%),
+      linear-gradient(180deg, #fff6fa 0%, #feeef6 50%, #fff4fb 100%);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-brand text-white rounded-xl font-medium hover:bg-brand-dark transition-all duration-200 active:scale-95 shadow-[0_12px_30px_rgba(232,93,117,0.22)];
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-dark-tertiary/70 text-foreground rounded-xl font-medium border border-border hover:bg-dark-tertiary transition-all duration-200 active:scale-95 shadow-sm;
+  }
+
+  .card {
+    @apply bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(255,238,245,0.98))] border border-border rounded-2xl p-6 hover:border-brand-light transition-all duration-300 shadow-[0_18px_45px_rgba(228,154,176,0.22)] backdrop-blur-sm;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-white/95 border border-border rounded-xl text-foreground placeholder-muted focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all duration-200;
+  }
+}
+
+@keyframes pulse-alert {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 71, 111, 0.52);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(239, 71, 111, 0);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 71, 111, 0.56);
+  }
+  70% {
+    box-shadow: 0 0 0 40px rgba(239, 71, 111, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 71, 111, 0);
+  }
+}
+
+.animate-pulse-alert {
+  animation: pulse-alert 2s infinite;
+}
+
+.animate-ripple {
+  animation: ripple 1.5s infinite;
+}

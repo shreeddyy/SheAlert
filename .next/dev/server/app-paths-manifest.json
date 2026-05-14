@@ -1,0 +1,20 @@
+{
+  "/ai/page": "app/ai/page.js",
+  "/api/audio/[id]/route": "app/api/audio/[id]/route.js",
+  "/api/audio/route": "app/api/audio/route.js",
+  "/api/auth/session/route": "app/api/auth/session/route.js",
+  "/api/contacts/route": "app/api/contacts/route.js",
+  "/api/dashboard/route": "app/api/dashboard/route.js",
+  "/api/journey/route": "app/api/journey/route.js",
+  "/api/safety-plan/route": "app/api/safety-plan/route.js",
+  "/api/sos/route": "app/api/sos/route.js",
+  "/api/threat-analyzer/route": "app/api/threat-analyzer/route.js",
+  "/audio/page": "app/audio/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/journey/page": "app/journey/page.js",
+  "/location/page": "app/location/page.js",
+  "/page": "app/page.js",
+  "/plan/page": "app/plan/page.js",
+  "/sos/page": "app/sos/page.js"
+}
